@@ -8,11 +8,7 @@
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.jonnyzzz.pluginkeys.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.jonnyzzz.pluginkeys.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    <actions>
+        <action class="com.github.jonnyzzz.pluginkeys.services.MyAction" text="Log License Keys" />
+    </actions>
 </idea-plugin>
